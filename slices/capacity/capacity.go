@@ -8,10 +8,10 @@ func Extend(slice0 []int, element int) []int {
 	n := len(slice0)
 	slice := slice0[0 : n+1]
 	slice[n] = element
-    if cap(slice) <= len(slice) {
-        fmt.Println("slice is full!")
-        return slice0
-    }
+	if cap(slice) <= len(slice) {
+		fmt.Println("slice is full!")
+		return slice0
+	}
 	return slice
 }
 
